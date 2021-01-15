@@ -1,0 +1,211 @@
+#wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -10.2rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+
+  -webkit-box-shadow: 3px 0px 5px 0px rgba(222, 222, 222, 1);
+  -moz-box-shadow: 3px 0px 5px 0px rgba(222, 222, 222, 1);
+  box-shadow: 3px 0px 5px 0px rgba(222, 222, 222, 1);
+  z-index: 1;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 10rem;
+}
+
+.sidebar-heading {
+  margin: 18px 0px 5px 20px;
+}
+
+.sidebar-heading img {
+  width: 5rem;
+  border: 1px solid black;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -10.2rem;
+  }
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+/*.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active*/
+.nav-tabs .nav-link.active {
+  color: #1fb691 !important;
+  background-color: #fff;
+  border-width: 2px;
+  border-color: #fff #fff #1fb691 #fff;
+}
+
+.topbar {
+  background-color: #fff;
+}
+
+#navbarMiddle {
+  padding: 3px 0 0 50px;
+  background-color: #fff;
+}
+
+#navbarMiddle a {
+  padding: 7px 10px;
+  margin: 0 12px;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.nav-item a {
+  font-size: 0.8rem;
+}
+
+.logout img {
+  margin-right: 8px;
+}
+
+#navbarSupportedContent li {
+  margin-right: 30px;
+}
+
+footer h5,
+footer a {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+footer {
+  border-top: 1px solid lightgray;
+}
+
+/*main*/
+
+.profile {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 28px;
+}
+
+.profile-section {
+  margin: 60px 0 20px 10px;
+}
+
+.form-button {
+  border-radius: 2px;
+  background-color: #4b8dbd;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 4px 8px;
+  margin: 2px;
+  font-weight: 400;
+}
+
+.main-form {
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.form-control {
+  height: 1.2rem;
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 10px;
+}
+
+.main-form label {
+  font-size: 0.75rem;
+  color: gray;
+  margin: 8px 0 2px 15px;
+}
+
+@media (max-width: 768px) {
+  .main-form {
+    padding: 5px;
+  }
+
+  .form-control {
+    padding: 8px 0px
+  }
+
+  /*#page-content-wrapper {
+    margin-left: -5px;
+  }*/
+}
+
+.user h3,
+.my-details-banner h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.user h5,
+.my-details-banner h5 {
+  font-size: 1rem;
+  color: gray;
+  font-weight: 400;
+}
+
+.my-details-banner h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.profile-section button {
+  height: 1rem;
+  padding: 0px 8px 3px 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #1fb691;
+  opacity: 0.8;
+  margin-left: 10px;
+}
+
+.save-button-wrapper button {
+  padding: 10px 28px 10px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #1fb691;
+  opacity: 0.9;
+}
+
+.upgrade-btn button {
+  background-color: #1d5a83;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.upgrade-btn {
+  margin-top: 1.7rem !important;
+}

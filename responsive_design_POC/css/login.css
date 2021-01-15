@@ -1,0 +1,101 @@
+h3.loginOr {
+    font-family: sans-serif;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 0.9em;
+    position: relative;
+    color: #082C3F;
+    font-weight: 300;
+  }
+  h3.loginOr:before {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: #F4F4F4;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  h3.loginOr:after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background: #F4F4F4;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  span {
+    background: #fff;
+  }
+
+  button#google {
+    background-image: url("../static/google/btn_google_signin_light_normal_web.png");
+    background-size: cover;
+    width: 190px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .create-accout-link {
+    color: #1FB691;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .sign-in-btn {
+    background-color: #1FB691;
+    color: white;
+    float: right;
+    width: 90px;
+    border-color: #158066;
+    padding: 3px;
+  }
+
+  .forgot_pwd_gray {
+    text-decoration: none;
+    color: #939393;
+    font-weight: 100;
+    font-size: 0.8rem;
+  }
+
+  .login-card-body {
+    padding: 2.5rem 3.5rem;
+  }
+
+  input {
+    outline: 0;
+    border-width: 0 0 2px !important;
+    border-color: #F4F4F4 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+  input:focus {
+    border-color:#F4F4F4 !important;
+  }
+
+
+  .submit-wrapper{
+    min-height: 40px;
+  }
+
+  .sign-in{
+    color: #082C3F;
+    font-weight: 600;
+  }
+
+  .sign-in-card{
+    border-radius: 0.45rem;
+    padding: 50px 0 10px 0;
+  }
+
+  .container-signin{
+    margin-top: 5rem;
+  }
+
+  .wrapper-google{
+    padding: 20px;        
+  }

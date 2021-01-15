@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet" />
+
+    <link href="css/template.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Candal" />
+
+    <style></style>
+  </head>
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">
+          <img src="./static/logo.svg" alt="" />
+        </div>
+        <div class="list-group list-group-flush sidebar-menu">
+          <ul class="vertical-nav">
+            <li>
+              <a href="#General" class="-action"
+                ><img src="./static/icon_house.svg" alt="" />General</a
+              >
+            </li>
+            <li>
+              <a href="#Profile" class="active -action"
+                ><img src="./static/icon_user.svg" alt="" />Profile</a
+              >
+            </li>
+            <li>
+              <a href="#Extras" class="-action"
+                ><img src="./static/icon_extras.svg" alt="" />Extras</a
+              >
+            </li>
+            <li>
+              <a href="#FAQ" class="-action"
+                ><img src="./static/icon_FAQ.svg" alt="" />FAQ</a
+              >
+            </li>
+            <li>
+              <a href="#Invites" class="-action"
+                ><img src="./static/icon_invites.svg" alt="" />Invites</a
+              >
+            </li>
+            <li>
+              <a href="#Issues" class="-action"
+                ><img src="./static/icon_issues.svg" alt="" />Issues</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="bg-light ">
+        <div id="page-content-wrapper" class="bg-light ">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom topbar">
+          <button class="btn btn-outline-secondary" id="menu-toggle">
+            <!--i class="fas fa-toggle-off"></i-->Sidebar
+          </button>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home"
+                  >HOME <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#business">BUSINESS</a>
+              </li>
+
+              <li class="nav-item">
+                <button type="button" class="btn btn-light logout">
+                  <img src="./static/icon_logout.svg" alt="" />Logout
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <nav class="navbar navbar-light border-bottom" id="navbarMiddle">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a
+              class="nav-item nav-link active"
+              id="nav-home-tab"
+              data-toggle="tab"
+              href="#nav-home"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >My Details</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-profile-tab"
+              data-toggle="tab"
+              href="#nav-profile"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+              >My Plan</a
+            >
+            <a
+              class="nav-item nav-link"
+              id="nav-contact-tab"
+              data-toggle="tab"
+              href="#nav-contact"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+              >Travel Documents</a
+            >
+          </div>
+        </nav>
+
+        <div class="container ">
+          <div class="w-100">
+            <div class="profile-section content-box-inner d-flex ">
+              <div >
+                <img src="static/i.jpg" alt="profile" class="profile">
+              </div>
+
+              <div class="user">
+                <h3>Arka Mallick</h3>
+                <h5>Member since 1.02.21</h5>
+              </div>
+
+              <div ><button class="btn  btn-success">PREMIUM</button></div>
+              
+            </div>
+
+            <div class="content-box-inner my-details-banner">
+              <h3>My Details</h3>
+              <h5>Here is an overview of your details. You can update and change them as you need.
+              </h5>
+              <h5>Please always update your details in case of changing your address.</h5>
+
+            </div>
+          </div>
+
+          <form>
+            <div class="row bg-white main-form mt-5">
+
+              <div class="col-md-4">
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby=""
+                  placeholder="Greg Bezinsky"
+                />
+              </div>
+                <div class="form-group">
+                <label for="gender">Gender</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="gender"
+                  aria-describedby=""
+                  placeholder="Male"
+                />
+                </div>
+                <div class="form-group">
+                <label for="language">Preffered language</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="language"
+                  aria-describedby=""
+                  placeholder="English"
+                />
+                </div>
+                <div class="form-group">
+                <label for="family">Family size</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="family"
+                  aria-describedby=""
+                  placeholder="N/A"
+                />
+                </div>
+                <div class="form-group">
+                <label for="dob">Date of birth</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="dob"
+                  aria-describedby=""
+                  placeholder="15 Oct. 1989"
+                />
+                </div>
+              </div>
+
+              <!-- collapsible gap in between -->
+              <div class="col-sm-2"></div>
+
+
+              <div class="col-md-4">
+                <div class="form-group">
+                <label for="street">Street</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="street"
+                  aria-describedby=""
+                  placeholder="Str. 3 August 1919"
+                />
+              </div>
+                <div class="row">
+                  <div class="form-group col-xl-5">
+                    <label for="city">City</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city"
+                      aria-describedby=""
+                      placeholder="Timisoara"
+                    />
+                  </div>
+
+                  <div class="form-group col-xl-5">
+                    <label for="postal">Postal code</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="postal"
+                      aria-describedby=""
+                      placeholder="300028"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-xl-5" >
+                    <label for="county">County</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="county"
+                      aria-describedby=""
+                      placeholder="Timis"
+                    />
+                  </div>
+
+                  <div class="form-group col-xl-5">
+                    <label for="country">Country</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="country"
+                      aria-describedby=""
+                      placeholder="RO"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-xl-8">
+                    <label for="package">Packages type</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="package"
+                      aria-describedby=""
+                      placeholder="Single"
+                    />
+                  </div>
+
+                  <div class="form-group col-xl-2 upgrade-btn">
+                    <button class="btn btn-primary">
+                      UPGRADE
+                    </button>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-xl-8">
+                    <label for="membership">Membership</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="membership"
+                      aria-describedby=""
+                      placeholder="Entry"
+                    />
+                  </div>
+
+                  <div class="form-group col-xl-2 upgrade-btn">
+                    <button class="btn btn-primary">
+                      UPGRADE
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+                
+            </div><!-- end of main row-->
+
+            <div class="save-button-wrapper w-100 text-center mt-3 py-5">
+              <button class="btn btn-success btn-sm">
+                SAVE
+              </button>
+            </div>
+          </form>
+          
+        </div>
+
+        <footer class="bg-light text-center text-lg-start align-items-center my-5 mt-5">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-5 mb-4 mb-md-0 mt-2">
+                <h5 class="text-uppercase text-dark">PRODUCTS & FEATURES</h5>
+        
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" >Features</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Plans & Prices</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <!--Grid column-->
+        
+              <!--Grid column-->
+              <div class="col-lg-2 col-md-5 mb-4 mb-md-0 mt-2">
+                <h5 class="text-uppercase mb-0 text-dark">SUPPORT</h5>
+        
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" >Payment</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Get started</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Learn</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Why us?</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Contact us?</a>
+                  </li>
+                  <li>
+                    <a href="#!" >FAQs</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+        
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-5 mb-4 mb-md-0 mt-2">
+                <h5 class="text-uppercase text-dark">PLATFORM</h5>
+        
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" >How it works</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Terms of service</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Cookies policy</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+        
+              <!--Grid column-->
+              <div class="col-lg-2 col-md-5 mb-4 mb-md-0 mt-2">
+                <h5 class="text-uppercase mb-0 text-dark">ABOUT US</h5>
+        
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" >Company info</a>
+                  </li>
+                  <li>
+                    <a href="#!" >Imprint</a>
+                  </li>
+
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <!--div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </div-->
+          <!-- Copyright -->
+        </footer>
+
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Candal" />
+    <style>
+      
+      h3.loginOr {
+        font-family: sans-serif;
+        margin: 40px auto;
+        text-align: center;
+        font-size: 0.7em;
+        max-width: 400px;
+        position: relative;
+        color: gray;
+      }
+      h3.loginOr:before {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 0.5px;
+        background: lightgray;
+        position: absolute;
+        left: 0;
+        top: 50%;
+      }
+      h3.loginOr:after {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 0.5px;
+        background: lightgray;
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+      span {
+        background: #fff;
+      }
+
+      button#google {
+        background-image: url("static/google/btn_google_signin_light_normal_web.png");
+        background-size: cover;
+        width: 125px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .create-accout-link {
+        color: #1FB691;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .sign-in-btn {
+        background-color: #1FB691;
+        color: white;
+        float: right;
+        width: 90px;
+        border-color: #158066;
+        padding: 3px;
+      }
+
+      .forgot_pwd_gray {
+        text-decoration: none;
+        color: gray;
+        font-weight: 100;
+        font-size: 0.8rem;
+      }
+
+      .login-card-body {
+        padding: 2.5rem 3.5rem;
+      }
+
+      /*
+      .left-empty-padding {
+      }
+
+      .wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+
+      @media screen and (min-width: 1091px) {
+        .wrapper {
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
+      }
+
+      @media screen and (max-width: 1090px) {
+        .wrapper > div:nth-child(2){
+          grid-template-columns: 100%;
+        }
+
+        .wrapper > div:first-child {
+          width: 30%;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .wrapper {
+          display: grid;
+          grid-template-columns: 100%;
+        }
+
+        .wrapper > div:first-child {
+          grid-template-columns: 0%;
+        }
+      }*/
+
+      input {
+        outline: 0;
+        border-width: 0 0 0.2px !important;
+        border-color: rgba(202, 202, 204, 0.945) !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+      }
+      input:focus {
+        border-color: rgba(202, 202, 204, 0.945) !important;
+      }
+
+
+      .submit-wrapper{
+        min-height: 40px;
+      }
+
+      .sign-in{
+        color: #082C3F;
+        font-weight: 600;
+      }
+
+      .sign-in-card{
+        border-radius: 0.45rem;
+      }
+    </style>
+
+    <script>
+      function resize() {
+        var windowWidth = $(window).width();
+        //console.log(windowWidth);
+
+        if (windowWidth < 1090) {
+          $(".wrapper > div:nth-child(1)").css("margin-left", "0");
+          $(".wrapper > div:nth-child(1)")
+            .parent()
+            .addClass("justify-content-center");
+        } else {
+          $(".wrapper > div:nth-child(1)")
+            .parent()
+            .removeClass("justify-content-center");
+          $(".wrapper > div:nth-child(1)").css("margin-left", "50%");
+        }
+      }
+
+      $(document).ready(function () {
+        resize();
+
+        $(window).resize(function () {
+          resize();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <!-- root -->
+
+      <div
+        class="d-flex align-items-center justify-content-center"
+        style="
+          min-height: 100vh;
+          background: url(./static/background.png);
+          background-position: center;
+          background-repeat: no-repeat;
+        "
+      >
+        <!--div class=""></div-->
+
+        <div class="">
+          <div class="wrapper" style="min-width: 420px; max-width: 600px !important">
+            <!--div class="left-empty-padding"></div-->
+            <div class="w-100">
+              <div class="card sign-in-card">
+                <div class="card-body login-card-body">
+                  <div id="signin_banner">
+                    <h2 class="sign-in">Sign in</h2>
+                    <div class="mt-2">
+                      New here?
+                      <a href="/signup" class="create-accout-link"
+                        >Create an account.</a
+                      >
+                    </div>
+                  </div>
+
+                  <form>
+                    <div class="form-group mt-5" id="email">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder=""
+                      />
+                    </div>
+
+                    <div class="form-group mt-5">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                        placeholder=""
+                      />
+                    </div>
+
+                    <div className="w-100 text-center mt-3">
+                      <a
+                        id="forgot-password"
+                        href="/forgot-password"
+                        class="forgot_pwd_gray"
+                        >Forgot your password?</a
+                      >
+                    </div>
+
+                    <div class="mt-md-3 submit-wrapper" >
+                      <button type="submit" class="btn btn-primary sign-in-btn">
+                        Sign In
+                      </button>
+                    </div>
+
+                  </form>
+
+                  <div class="text-center align-items-center mt-md-3">
+                    <h3 class="loginOr">OR</h3>
+                  </div>
+
+                  <div class="text-center align-items-center mt-md-3">
+                    <button id="google"></button>
+                  </div>
+                </div>
+                <!--card body end-->
+              </div>
+              <!--card end-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

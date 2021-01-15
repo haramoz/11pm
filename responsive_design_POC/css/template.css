@@ -1,0 +1,126 @@
+/* Reset */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .aside-sidebar a {
+      font-family: "Segoe UI",Arial,sans-serif;
+      text-decoration: none;
+      display: block;
+      padding: 2px 1px 1px 16px;
+  }
+  a {
+      color: inherit;
+  }
+  a {
+      background-color: transparent;
+  }
+  *, *:before, *:after {
+      box-sizing: inherit;
+  }
+
+  /* Reset */
+
+  @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+  body {
+    font-family: 'Oswald', sans-serif !important;
+  }
+  /* TOP BAR */
+  ul.horizontal {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #fff;
+  }
+  ul.gray {
+      border: 1px solid #e7e7e7;
+      background-color: #fff;
+  }
+
+  ul.horizontal li {
+      float: left;
+  }
+
+  ul.gray li a {
+      display: block;
+      color: darkgray;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  /* TOP BAR */
+
+  /* Left sidebar */
+  .aside-sidebar {
+      height: 100%;
+      width: 130px; /*12.5%;*/
+      background-color: #fff;
+      position: fixed!important;
+      z-index: 1;
+      overflow: auto;
+      
+      -webkit-box-shadow: 3px 0px 5px 0px rgba(222, 222, 222, 1);
+      -moz-box-shadow:    3px 0px 5px 0px rgba(222, 222, 222, 1);
+      box-shadow:         3px 0px 5px 0px rgba(222, 222, 222, 1);
+  }
+
+  .aside-sidebar #logo-wrapper{
+    margin-top: 30px;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(15, 15, 15, 1);
+    -moz-box-shadow:    0px 1px 2px 0px rgba(15, 15, 15, 1);
+    box-shadow:         0px 1px 2px 0px rgba(15, 15, 15, 1);
+  }
+
+  #logo-wrapper{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 75px;
+    margin-left: 18px;
+    contain: content;
+  }
+
+  .aside-sidebar #logo-wrapper img{
+    width: 75px;
+  }
+  
+  .vertical-nav img{
+    width: 11px;
+    height: 11px;
+    padding: 0px 10px 0px 0px;
+    vertical-align: text-bottom;
+  }
+
+  .vertical-nav{
+    margin-left: 50px;
+  }
+
+  .vertical-nav li{
+    font-size: 11px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+
+
+  .vertical-nav li:first-child img{
+    width: 14px;
+    height: 14px;
+    padding: 0px 8px 0px 0px;
+  }
+
+  .vertical-nav .active {
+    background:  #e6fff9;
+    border-radius: 0px 10px 10px 0px;
+    color:  #1FB691;
+  }
+  /* Left sidebar */
+  
+  .main-container{
+    padding-left: 195px;
+    background-color: rgba(239, 245, 247, 0.897);
+  }    
