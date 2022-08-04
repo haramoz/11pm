@@ -1,0 +1,1 @@
+This is a Shiny UI project. The inspiration comes from the TIM project. Will get it more improved if needed, for now suppose to be Hello World just.
