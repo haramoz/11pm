@@ -1,0 +1,9 @@
+Set up a hello world Rest service using React Front end and node JS backend
+Dockerize the system and integrate with the Docker compose
+Design the database collections for mongodb
+write init sql script and integrate with docker compose
+integrate DB with backend functionalities
+Integration test
+!Test cases for node JS backend
+!Authentication using keycloak
+!CICD using Jenkins
